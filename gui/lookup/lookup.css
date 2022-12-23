@@ -1,0 +1,114 @@
+body {
+    font-family: "Tahoma";
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+  
+a:link {
+    color: #989898;
+}
+a:hover {
+    border-bottom: 1px solid;
+}
+
+h1 {
+    color: #414548;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#labelsList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
+    grid-gap: 2px;
+}
+
+.error {
+    color: #ba3939;
+    background: #ffe0e0;
+    border: 1px solid #a33a3a;
+}
+
+.hashPairs {
+    list-style-type: none;
+    background-color: #eaeaea;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'label'
+        'hash40'
+        'type';
+    text-align: left;
+}
+
+.hashPairs > h2 {
+    grid-area: label;
+    margin-bottom:20px;
+    font-size: 15px;
+}
+
+.hashPairs > p {
+    grid-area: hash40;
+    margin: 0;
+    margin-top: -18px;
+}
+
+.hashPairs > p2 {
+  grid-area: type;
+}
+
+#searchBar {
+    width: 85%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#searchWrapper::after {
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#inputButton {
+    background-color: #ff4554; 
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    }
+    
+    #inputButton:hover {
+    background-color: #00c3e3; /* Green */
+    color: white;
+    }
+
+

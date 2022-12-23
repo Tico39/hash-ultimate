@@ -1,22 +1,39 @@
 {
-  "name": "electron-quick-start",
+  "name": "hash40-tool",
+  "productName": "Hash Ultimate",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "An application to lookup, convert, and extract Hash40 keys and labels for modding Smash Bros. Ultimate",
   "main": "main.js",
+  "build": {
+    "asar":false,
+    "appId": "com.hash40.app",
+    "mac":{
+      "category": "public.app-category.utilities",
+      "icon": "./gui/imgs/icon.icns"
+    },
+    "win":{
+      "icon":"./gui/imgs/favicon.ico"
+    }
+  },
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "hash40",
+    "Smash",
+    "Bros",
+    "Ultimate"
   ],
-  "author": "GitHub",
+  "author": "Humberto Álvarez",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^21.1.1"
+    "electron": "^22.0.0",
+    "electron-packager": "^17.1.1"
+  },
+  "dependencies": {
+    "python-shell": "^3.0.1",
+    "sweetalert2": "^11.4.8"
   }
+  
 }

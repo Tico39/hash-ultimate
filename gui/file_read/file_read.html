@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p><a href="../homepage/Homepage.html">RETURN</a></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>File Read</title>
+        <link rel="stylesheet" href="file_read.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hash40 Extract</h1>
+            <div class="form">
+                <div>
+                  <label for="file">Choose file to upload&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                  <input 
+                         type="file" 
+                         id="ssbu_file" 
+                         name="file"
+                         accept= ".bin, .tonelabel, .sqb, .sli, .prc, .stprm, .stdat"
+                         ul/>
+                          
+                </div>
+                <div>
+                  <button id="submit_btn" onclick="read_file()"> Submit</button>
+                </div>
+            </div>
+            <div class="loader"></div>
+        </div>
+        <ul id="labelsList"></ul>
+        <script src="file_read.js"></script>
+    </body>
+</html>

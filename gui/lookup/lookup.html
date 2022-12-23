@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p><a href="../homepage/Homepage.html">RETURN</a></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Lookup & Conversion</title>
+        <link rel="stylesheet" href="lookup.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lookup & Conversion</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Label / Hash40"
+                />
+                <button 
+                    class="btn btn-success"
+                    onclick="get_hash40()"
+                    id="inputButton">
+                    Convert
+                </button>
+            </div>
+            <ul id="labelsList"></ul>
+        </div>
+        <script src="lookup.js"></script>
+    </body>
+</html>
+
+
+

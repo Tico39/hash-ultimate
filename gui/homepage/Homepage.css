@@ -1,0 +1,50 @@
+body {
+  font-family: "Tahoma";
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  color: #000;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+  
+}
+
+.btn-primary {
+margin-top: 100px;
+background-color: #ff4554; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 4px;
+transition-duration: 0.4s;
+margin-right: 100px;
+}
+
+.btn-primary:hover {
+background-color: #00c3e3; /* Green */
+color: white;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: white;
+}
