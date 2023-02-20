@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "python-shell": "^3.0.1",
-    "sweetalert2": "^11.4.8"
+    "sweetalert2": "^11.7.2"
   }
   
 }
